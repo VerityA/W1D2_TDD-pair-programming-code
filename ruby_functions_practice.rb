@@ -50,8 +50,16 @@ def number_to_short_month_name(number)
     when 9
       return "Sep"
   end
-
-  def volume_of_cube(length)
-    return length * 3
-  end
 end
+
+def volume_of_cube(cube_length)
+  return cube_length ** 3
+end
+
+def volume_of_sphere(sphere_radius)
+  return (4.to_f / 3 * Math::PI * sphere_radius ** 3).to_i
+end
+
+def fahrenheit_to_celsius(fahrenheit_temp)
+  return (fahrenheit_temp - 32) * 5 / 9
+end 
